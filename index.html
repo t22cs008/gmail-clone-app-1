@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Gmail風ウェブページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Gmail</div>
+        <div class="search-bar">
+            <input type="text" placeholder="メールを検索">
+        </div>
+        <div class="user-info">ユーザー情報</div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <button class="compose-btn">作成</button>
+            <ul class="menu">
+                <li>受信トレイ</li>
+                <li>スター付き</li>
+                <li>送信済み</li>
+                <li>下書き</li>
+                <!-- 他のメニュー項目 -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="email-list">
+                <!-- ダミーのメール項目 -->
+                <div class="email-item">
+                    <div class="sender">差出人1</div>
+                    <div class="subject">件名1</div>
+                    <div class="snippet">メールのプレビュー内容1...</div>
+                </div>
+                <div class="email-item">
+                    <div class="sender">差出人2</div>
+                    <div class="subject">件名2</div>
+                    <div class="snippet">メールのプレビュー内容2...</div>
+                </div>
+                <!-- 他のメール項目 -->
+            </div>
+            <div class="email-content">
+                <!-- 選択されたメールの内容を表示 -->
+                <div class="email-header">
+                    <div class="email-subject">件名1</div>
+                    <div class="email-sender">差出人1 &lt;example@example.com&gt;</div>
+                </div>
+                <div class="email-body">
+                    <!-- メール本文 -->
+                    ここにメールの内容が表示されます。
+                </div>
+                <div class="email-actions">
+                    <button>返信</button>
+                    <button>全員に返信</button>
+                    <button>転送</button>
+                    <!-- 他のアクションボタン -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
