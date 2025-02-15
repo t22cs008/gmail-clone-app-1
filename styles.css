@@ -1,101 +1,92 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* 全体のスタイル設定 */
+html, body {
     margin: 0;
     padding: 0;
-    background-color: #f1f3f4;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.email-view-container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.email-header, .email-footer {
+/* ヘッダーのスタイル設定 */
+.email-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #f1f3f4;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ccc;
 }
 
-.email-footer {
-    border-top: 1px solid #e0e0e0;
-    border-bottom: none;
-}
-
-.header-left, .header-right {
-    display: flex;
-    align-items: center;
-}
-
-.header-button, .footer-button {
+/* ヘッダー内のボタンのスタイル設定 */
+.header-button {
     background: none;
     border: none;
-    color: #5f6368;
     font-size: 16px;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 10px;
+}
+
+/* ヘッダー左側のスタイル設定 */
+.header-left {
     display: flex;
     align-items: center;
 }
 
-.header-button:last-child, .footer-button:last-child {
-    margin-right: 0;
+/* ヘッダー右側のスタイル設定 */
+.header-right {
+    display: flex;
+    align-items: center;
 }
 
-.header-button:hover, .footer-button:hover {
-    background-color: #e8eaed;
-    border-radius: 50%;
-}
-
+/* メインコンテンツのスタイル設定 */
 .email-content {
+    flex-grow: 1;
     padding: 20px;
+    overflow-y: auto;
 }
 
+/* メール情報部分のスタイル設定 */
 .email-info {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
+/* アイコンのスタイル設定 */
 .inline-icon-large {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     margin-right: 10px;
 }
 
+/* 日付のスタイル設定 */
 .email-date {
-    color: #5f6368;
+    color: #777;
     margin-left: 10px;
 }
 
+/* 受信者情報のスタイル設定 */
 .to-self {
-    color: #5f6368;
-    margin: 5px 0 0;
+    color: #777;
+    margin: 5px 0;
 }
 
-.email-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* フッターのスタイル設定 */
+.email-footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #f1f3f4;
+    border-top: 1px solid #ccc;
 }
 
-.email-content p {
-    line-height: 1.6;
-    margin: 10px 0;
+/* フッター内のボタンのスタイル設定 */
+.footer-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
-.email-content a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-.email-content a:hover {
-    text-decoration: underline;
-}
