@@ -1,92 +1,123 @@
-/* 全体のスタイル設定 */
+/* 全体のスタイル */
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-/* ヘッダーのスタイル設定 */
+.email-view-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.email-header, .email-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f3f4;
+  border: 1px solid #e0e0e0;
+}
+
 .email-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f1f3f4;
-    border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-/* ヘッダー内のボタンのスタイル設定 */
-.header-button {
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-/* ヘッダー左側のスタイル設定 */
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-/* ヘッダー右側のスタイル設定 */
-.header-right {
-    display: flex;
-    align-items: center;
-}
-
-/* メインコンテンツのスタイル設定 */
-.email-content {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-/* メール情報部分のスタイル設定 */
-.email-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-/* アイコンのスタイル設定 */
-.inline-icon-large {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-/* 日付のスタイル設定 */
-.email-date {
-    color: #777;
-    margin-left: 10px;
-}
-
-/* 受信者情報のスタイル設定 */
-.to-self {
-    color: #777;
-    margin: 5px 0;
-}
-
-/* フッターのスタイル設定 */
 .email-footer {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px 20px;
-    background-color: #f1f3f4;
-    border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-/* フッター内のボタンのスタイル設定 */
+.header-left, .header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.header-button:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.email-content {
+  margin-top: 60px; /* ヘッダーの高さ */
+  margin-bottom: 60px; /* フッターの高さ */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inline-icon-large {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.email-date {
+  color: #888;
+}
+
+.to-self {
+  color: #888;
+  font-size: 14px;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.email-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f3f4;
+  border: 1px solid #e0e0e0;
+}
+
 .footer-button {
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 20px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
 }
 
+.footer-button:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
